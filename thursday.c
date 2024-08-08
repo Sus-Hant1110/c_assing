@@ -8,13 +8,13 @@ int main()
     int second = a * b % c + 1;
     int third = ++a * b - c--;
     int fourth = 7 - -b * ++d;
-    int fifth= c--;
+    int fifth = --c;
 
     printf("%d\n", first);
     printf("%d\n", second);
     printf("%d\n", third);
     printf("%d\n", fourth);
-    printf("%d\n",fifth);
+    printf("%d\n", fifth);
 
     return 0;
 }

@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     float r1, q1, r2, q2;
     float total1, total2, average;
 
