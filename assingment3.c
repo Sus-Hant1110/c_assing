@@ -1,4 +1,4 @@
-// WAP  find the largest number among the three numbers entered by the user.Use ternary operator.
+// WAP to find the largest number among the three numbers entered by the user.Use ternary operator.
 
 #include <stdio.h>
 
