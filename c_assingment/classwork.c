@@ -3,6 +3,7 @@
 int main()
 {
     int a = 1, b = 2, c = 3, d = 4;
+    /* Here is an explanation of what each line is doing: */
 
     int first = a * b / c;
     int second = a * b % c + 1;
