@@ -5,7 +5,8 @@
 int main()
 {
     int a, b, result;
-    char operation;
+    char choice;
+    
 
     printf("Enter the first number: ");
     scanf("%d", &a);
@@ -13,34 +14,34 @@ int main()
     printf("Enter the second number: ");
     scanf("%d", &b);
 
-    printf("Enter the operation: ");
-    scanf(" %c", &operation);
+    printf("a. Add\nb. Sub\nc. Mul\nd. Div\nEnter your choice: ");
+    scanf(" %c", &choice);
 
-    switch (operation)
+    switch (choice)
     {
-    case '1':
+    case 'a':
         result = a + b;
         printf("The sum  is %d\n", result);
         break;
 
-    case '2':
+    case 'b':
         result = a - b;
         printf("The difference  is %d\n", result);
         break;
 
-    case '3':
+    case 'c':
 
         result = a * b;
         printf("The product  is %d\n", result);
         break;
 
-    case '4':
+    case 'd':
         result = a / b;
         printf("The division  is %d\n", result);
         break;
 
     default:
-        printf("Invalid operation\n");
+        printf("Invalid choice\n");
         break;
     }
 
