@@ -12,7 +12,7 @@ int main()
     {
         printf("Largest number: %d\n", a);
     }
-    else if ( b > c)
+    else if ( b > a )
     {
         printf("Largest number: %d\n", b);
     }
