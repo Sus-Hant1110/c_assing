@@ -1,24 +1,20 @@
-// WAP to read four digit no. & print the sum of each digit.
+// WAP to read four digit no. & print the sum of each digit using loop
 
 #include <stdio.h>
 
-int main() {
-    int num;
-    printf("Enter a 4-digit number: ");
-    scanf("%d", &num);
-
-    int digit1 = num / 1000;
-    int digit2 = (num / 100) % 10;
-    int digit3 = (num / 10) % 10;
-    int digit4 = num % 10;
-
-    printf("First digit: %d\n", digit1);
-    printf("Second digit: %d\n", digit2);
-    printf("Third digit: %d\n", digit3);
-    printf("Fourth digit: %d\n", digit4);
-
-    printf("Sum of digits: %d\n", digit1 + digit2 + digit3 + digit4);
-
+int main()
+{
+    int n;
+    printf("Enter a 4 digit number: ");
+    scanf("%d", &n);
+    int i = 0;
+    int sum = 0;
+    while (n > 0)
+    {
+        i = n % 10;
+        sum = sum + i;
+        n = n / 10;
+    }
+    printf("Sum of each digit: %d\n", sum);
     return 0;
 }
-
