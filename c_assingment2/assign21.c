@@ -4,18 +4,22 @@
 
 int main()
 {
-    int n;
-    printf("Enter a number: ");
-    scanf("%d", &n);
+    int a ,b,n=0;
+    printf("Enter a start number: ");
+    scanf("%d", &a);
+    printf("Enter a end number: ");
+    scanf("%d", &b);
 
     int sum = 0;
-    for (int i = 1; i <= n; i++)
+    for (int i = a; i <= b; i++)
     {
         sum = sum+i;
+        n++;
     }
+   
 
     printf("Sum: %d\n", sum);
-    printf("Average: %d\n", sum / n);
+    printf("Average: %d\n", sum /n);
 
     return 0;
 }
